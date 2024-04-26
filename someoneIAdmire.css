@@ -1,0 +1,213 @@
+
+
+:root{
+    --extra-light: #f3f4f6;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body .section{
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    background-image: url("images/nightsky.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    
+    
+}
+
+.container{
+    width: 80%;
+    display:block;
+    margin:auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 70%;
+    height: auto;
+    margin-top: 60px;
+}
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #ffffff;
+    margin: 70px;
+}
+
+.content-section .content h3{
+    margin-top: 20px;
+    color: #ffffff;
+    margin-left: 70px;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-left: 70px;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 70px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    background-image: url("images/tyronepicture.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    
+    
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+   
+}
+
+nav{
+    height: 80px;
+    weight:100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.nav__logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--extra-light);
+    
+}
+
+.nav__links{
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 100%;
+    list-style: none;
+    display:none;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.open{
+    display: flex;
+}
+
+.nav__links .link{
+    font-size: 1.25rem;
+    color: var(--extra-light);
+    text-align: center;
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.nav__links .link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toggle__btn{
+    display: block;
+    color: var(--extra-light);
+    font-size: 2rem;
+
+}
+
+.hero{
+    max-width: 1200px;
+    height: calc(100vh - 80px);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    color: var(--extra-light;)
+}
+
+
+.hero h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: var(--extra-light);
+}
+
+.hero h1{
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--extra-light);
+}
+
+.hero button{
+    width: 150px;
+    padding: .75rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+    .nav__links {
+        width: 250px;
+    }
+    .hero {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav__links{
+        position: unset;
+        width: unset;
+        flex-direction: row;
+        gap: .5rem;
+        display: flex !important;
+        background: transparent;
+    }
+    .toggle__btn{
+        display: none;
+    }
+
+    .hero h2{
+        font-size: 4rem;
+    }
+
+    .hero h1{
+        font-size: 8rem;
+    }
+
+    .hero button{
+        width: 200px;
+        padding: 1 rem;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="aboutMe.css">
+    <title>Tyrone</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__logo"><a href="#">TYRN</a></div>
+            <ul class="nav__links">
+                <li class="link"><a href="home.html">HOME</a></li>
+                <li class="link"><a href="aboutMe.html">ABOUT ME</a></li>
+                <li class="link"><a href="myPassion.html">MY PASSION</a></li>
+                <li class="link"><a href="someoneIAdmire.html">SOMEONE I ADMIRE</a></li>
+            </ul>
+            <div class="toggle__btn">
+                <i class="ri-menu-line"></i>
+                <!--i class="ri-close-line"></i-->
+
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="section">
+        <div class=="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Me</h1>
+                </div>
+                <div class="content">
+                    <h3>Allow myself to introduce myself</h3>
+                    <p>"My name is Tyrone Josh E. Tang-o, and I currently live in Balanga, Bataan, in the Philippines. I am 19 years old and was born on January 10, 2005. Ever since I was a kid, I dreamed of being great one day. If I were an animal, I think I would be a lion because lions are wild and dangerous. My favorite quality about myself is that I'm never satisfied, but I'm grateful for what I have. My favorite quote is 'Champions make adjustments, and losers make excuses.' and my favorite Bible verse is Philippians 4:13 'I can do all things through Christ who gives me strength.'"</p>
+                    <div class="button">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="images/aboutMe.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle__btn")
+        const toggleBtnIcon = document.querySelector(".toggle__btn i")
+        const menu = document.querySelector(".nav__links")
+
+        toggleBtn.onclick = function () {
+            menu.classList.toggle("open")
+            const isOpen = menu.classList.contains("open")
+
+            toggleBtnIcon.classList = isOpen ? "ri-close-line" : "ri-menu-line"
+        }
+    </script>
+</body>
+</html>
